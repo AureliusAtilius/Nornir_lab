@@ -1,27 +1,62 @@
-XE-1:
-	hostname: 172.16.102.136
+S1:
+	hostname: 192.168.255.70
 	port: 22
-	username: cisco
+	username: josh
 	password: cisco
 	platform: ios
 	groups:
-		- xe-routers
+		virtual_switches
 
-XR-3:
-	hostname: 172.16.102.138
+S2:
+	hostname: 192.168.255.72
 	port:22
-	username: genie
-	password: sonpari
-	platform: iosxr
+	username: josh
+	password: cisco
+	platform: ios
 	groups:
-		- xr-routers
+		virtual_switches
 
-NX-2:
-	hostname: 172.16.102.137
-	port:443
-	usernam: admin
-	password: admin
+S3:
+	hostname: 192.168.255.82
+	port:22
+	usernam: josh
+	password: cisco
+	platform: ios
+	groups:
+		virtual_switches
+
+S4:
+	hostname: 192.168.255.83
+	port:22
+	usernam: josh
+	password: cisco
 	platform: nxos
-	groups: 
-		- nx-routers
+	groups:
+		virtual_switches
 
+S5:
+	hostname: 192.168.255.84
+	port:22
+	usernam: josh
+	password: cisco
+	platform: ios
+	groups:
+		virtual_switches
+
+S6:
+	hostname: 192.168.255.85
+	port:22
+	usernam: josh
+	password: cisco
+	platform: ios
+	groups:
+		virtual_switches
+
+R1:
+	hostname: 192.168.255.1
+	port:22
+	usernam: josh
+	password: cisco
+	platform: ios
+	groups:
+		virtual_router

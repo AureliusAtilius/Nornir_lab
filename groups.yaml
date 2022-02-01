@@ -3,14 +3,10 @@ global:
 		domain: domain.local
 		asn: 65000
 
-xe-routers:
+virtual_switches:
 	groups:
 		- global
 
-nx-routers:
+virtual_router:
 	groups:
 		- global
-
-xr-routers:
-	data:
-		asn: 100
